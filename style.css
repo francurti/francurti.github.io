@@ -1,0 +1,30 @@
+:root {
+  --bg: #0c2f2b;
+  --surface: #133f3a;
+  --text: #f3efe4;
+  --muted: #b9c7c2;
+  --accent: #f4b740;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 Inter, system-ui, sans-serif;
+}
+main { max-width: 680px; margin: 0 auto; padding: 48px 16px 64px; }
+h1, h2 { font-family: Sora, Inter, sans-serif; line-height: 1.25; }
+h1 { font-size: 2rem; margin: 0 0 8px; }
+h2 { font-size: 1.2rem; margin: 32px 0 8px; color: var(--accent); }
+p, li { color: var(--muted); }
+a { color: var(--accent); }
+.muted { font-size: 0.9rem; }
+.app {
+  display: flex; gap: 16px; align-items: center;
+  background: var(--surface); border-radius: 16px; padding: 16px;
+  margin-top: 32px;
+}
+.app img { width: 72px; height: 72px; border-radius: 16px; }
+.app h2 { margin: 0; }
+.app p { margin: 4px 0 0; }
+footer { margin-top: 48px; font-size: 0.9rem; color: var(--muted); }
